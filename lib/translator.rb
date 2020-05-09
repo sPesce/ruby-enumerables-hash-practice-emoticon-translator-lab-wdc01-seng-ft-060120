@@ -15,12 +15,12 @@ end
 def get_japanese_emoticon(filename, emoticon)
   hash = load_library(filename)
   eng_vers = ""
-  found = false
   
   
-   eng_vers = hash.each{|(key_out, val_out)|
+  
+  hash.each{|(key_out, val_out)|
       if(val_out[:japanese] == emoticon)
-        return val_out[:english]
+        eng_vers = val_out[:english]
       end 
     }
   
