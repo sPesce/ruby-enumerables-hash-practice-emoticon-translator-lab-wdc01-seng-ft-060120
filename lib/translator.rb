@@ -7,7 +7,7 @@ def load_library(filename)
     new[key] = {:english => valueArray[0], :japanese => valueArray[1]}
     new 
   }
-  #binding.pry 
+  
   
   
 end
@@ -22,6 +22,7 @@ def get_japanese_emoticon(filename, emoticon)
       if(val_out[:japanese] == emoticon)
         eng_vers = val_out[:english]
       end 
+      binding.pry 
     }
   
   eng_vers
