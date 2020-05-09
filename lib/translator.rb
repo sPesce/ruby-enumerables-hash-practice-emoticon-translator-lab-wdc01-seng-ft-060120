@@ -12,14 +12,14 @@ def load_library(filename)
   
 end
 
-def get_japanese_emoticon(filename, emoticon)
+def get_japanese_emoticon(filename, eng_vers
   hash = load_library(filename)
-  eng_vers = ""
+  jap_vers = ""
   
   
   
   hash.each{|(key_out, val_out)|
-      if(val_out[:japanese] == emoticon)
+      if(val_out[:english] == emoticon)
         eng_vers = val_out[:english]
       end 
       binding.pry 
