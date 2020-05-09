@@ -19,7 +19,7 @@ def get_japanese_emoticon(filename, eng_vers)
   
   
   hash.each{|(key_out, val_out)|
-      if(val_out[:english] == emoticon)
+      if(val_out[:english] == eng_vers)
         jap_vers = val_out[:japanese]
       end 
       #binding.pry 
