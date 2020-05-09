@@ -17,7 +17,7 @@ def get_japanese_emoticon(filename, emoticon)
   eng_vers = ""
   found = false
   
-  while found!
+  while !found
     hash.each{|(key_out, val_out)|
       if(val_out[:japanese] == emoticon)
         eng_vers = val_out[:english]
