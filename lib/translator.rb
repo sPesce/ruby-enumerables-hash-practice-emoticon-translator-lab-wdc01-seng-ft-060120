@@ -12,7 +12,7 @@ def load_library(filename)
   
 end
 
-def get_japanese_emoticon(filename, eng_vers
+def get_japanese_emoticon(filename, eng_vers)
   hash = load_library(filename)
   jap_vers = ""
   
